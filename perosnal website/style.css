@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image:url("mount.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  }
+/* nav bar */
+a{
+  text-decoration: none;
+  border: 2px;
+  margin:3px;
+  padding:3px;
+  font-size: 17px;
+  color: white;
+  border-radius: 3px;
+}
+ul{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+li{
+  display: inline-block;
+  margin-left: 2vw;
+}
+nav{
+  position: absolute;
+  top:5vh;
+  right: 1vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+
+}
+
+/* introduction */
+.top{
+  background-color:black;
+  opacity:.7;
+  margin:12vh 15vw 10vh 15vw;
+  padding: 5vh 0 0 0;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Sacramento', cursive;
+  color:#ff9a00;
+  /* box-shadow: 10px 10px 10px 10px black; */
+
+}
+
+.top h1{padding-top: 6vh;
+  width: 60%;
+  height: auto;
+  font-size: 4rem;
+  margin: 0 auto;
+}
+.top p{
+  width: 60%;
+  height: auto;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+#five, #four, #one, #two{
+  position: absolute;
+}
+
+@keyframes slide{
+  0%{
+    left:-10%;
+  }
+  50%{
+    left:50%;
+    }
+  100%{
+    left: 110%;
+  }
+}
+@keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+#one{
+  top:6vh;
+  width:7vw;
+  animation: slide 20s linear;
+  animation-iteration-count: infinite;
+}
+#two{
+  top:11vh;
+  width:7vw;
+  animation: slide 20s linear;
+  animation-iteration-count: infinite;
+  animation-delay: -4s;
+}
+#four{
+  top:24vh;
+  width:7vw;
+  animation: slide 20s linear;
+  animation-iteration-count: infinite;
+  animation-delay: -8s;
+}
+#five{
+  top:19vh;
+  width:7vw;
+  animation: slide 20s linear;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+}
+#six{
+  width: 70vw;
+  margin: 0 auto;
+}
+#three{
+  position: absolute;
+  right:10%;
+  top:6vh;
+  width: 6vw;
+  animation: spin 10s linear;
+  animation-iteration-count: infinite;
+}
+
+/* about me */
+.profile{
+  border-radius: 50%;
+}
+h2{
+  font-size: 3rem;
+}
+.aboutme{
+  background-color:black;
+  opacity:.7;
+  margin:12vh 15vw 10vh 15vw;
+  padding: 5vh 0 0 0;
+  color: white;
+}
+.aboutme p{
+  font-size: 1.5rem;
+}
